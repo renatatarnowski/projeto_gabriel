@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th,td{
+            padding: 10px 15px;
+        }
+        button{
+            padding: 10px 15px;
+            background-color: #07d;
+            color: #FFF;
+            outline: none;
+            cursor:pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        </style>
+
+        <script type="text/javascript">
+
+        var data = {
+            id:0,
+            list:[
+                {id:1, name:"Aimê"},
+                {id2, name:"Tereza"},
+            ]
+        }
+        
+            function render(){
+                const tbody=document.getElementById('tbody')
+                tbody.innerHTML = ''
+                data.list.map(item => {
+                    const tr=document.createElement('tr')
+                    tr.innerHTML = `
+                    <td>5(item.id)</td>
+                    <td>5{item.name}</td>
+                    <td>
+                    <buttom>EDIT</buttom>
+                    <buttom>DELETE</buttom>
+                    </td>
+                    
+
+                    tbody.appendChild(tr)
+                ))
+                }
+
+            function acid(){
+
+            }
+
+            function edit(){
+
+            }
+
+            function delete(){
+
+            }
+            window.addEventListener('load',e =>{
+                render();
+            }
+            
+    </script>
+</head>
+<body>
+    <table>
+        <head>
+            <tr>
+                <td>ID</td>
+                <td>NAME</td>
+                <td></td>
+            </tr>
+        </head>
+        <body id="tbady"></body>
+    </table>
+    <div>
+        <button>NOVO</button>
+    </div>
+    
+</body>
+</html>
