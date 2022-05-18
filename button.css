@@ -1,4 +1,3 @@
-
 .button{
     border-style: none;
     height: 40px;
@@ -6,13 +5,15 @@
     background-color: black;
     color: white;
     border-radius: 10px;
+    width: 80px;
 }
 
 button.dimgray{
     background-color: dimgray;
-
+  
 }
 
 button.green{
     background-color: green;
+   
 }
