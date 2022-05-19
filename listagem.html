@@ -6,109 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>App Filmes</title>
 </head>
 <style>
-    .btn-tabela {
-        padding: 5px;
-        margin: 10px;
-        background-color: red;
-        color: #ffffff;
+    pre {
+        padding: 29ox;
+        background: #ccc;
         border-radius: 10px;
-
-    }
-
-    .btn-tabela:hover {
-        background: rgba(255, 0, 0, 0.5);
+        margin: 20px;
     }
 </style>
+</head>
 
 <body>
-    <div class="center">
-        <a class="btn-tabela" href="tabela.html">Incluir novos filmes</a>
-    </div>
     <div class="container"></div>
-    <pre id="debug"></pre>
+    <pre id="debug">
+</pre>
     <h1>Filmes</h1>
-    <form class="jumbotron">
-        <div class="row">
-            <div class="col-4">
-                <label>Titulo</label>
-                <input onkeyup="atualizarDados()" type="text" class="form-control" placeholder="">
 
+    <form class="jumbotron"></form>
+    <div class="row">
+        <div class="col-4">
+            <label>Titulo</label>
+            <input onkeyup="atualizarDados()" type="text" class="form-control" placeholder="">
+            id="titulo"
 
-            </div>
+        </div>
+        <div class="col-3">
+            <label>Codigo</label>
+            <input onkeyup="atualizarDados()" type="url" class="form-control" placeholder="">
+            id="link"
+        </div>
+        <div class="col-3">
+            <label>Destaque</label>
+            <select id="destaque" onchange="atualizarDados()" class="form-control">
+                <option>SIM</option>
+                <option>NÃO</option>
 
-            <div class="col-3">
-                <label>codigo</label>
-                <input onkeyup="atualizarDados()" type="text" class="form-control" placeholder="">
-            </div>
-            <div class="col-3">
-                <label>Destaque</label>
-                <select class="form-control">
-                    <option>SIM</option>
-                    <option>NÃO</option>
-                </select>
-            </div>
-            <tbody>
-                <tr>
-                    <th class="text-rigth">
-                        <button class="btn btn-info">Editar</button>
-                        <button class="btn btn-info">Excluir</button>
-                        <a href="javascript:void(0)" class="btn btn-lg btn-block btn-success">
-                            Cadastrar Filme
-                        </a>
-                    </th>
-                </tr>
-    </form>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">titulo</th>
-                <th scope="col">codigo</th>
-                <th scope="col">destaque</th></select></div>
-            </tr>
-        </thead>
+            </select>
+        </div>
         <tbody>
             <tr>
-                <th>Culpa das estrelas</th>
-                <th>218926</th>
-                <th>sim</th>
-                <th class="text-right"><button class="btn btn-info">Acessar</button><button
-                        class="btn btn-danger">Excluir</button></th>
+                <th class="text-rigth">
+                    <button class="btn btn-info">Editar</button>
+                    <button class="btn btn-info">Excluir</button>
+                    <a href="javascript:void(0)" class="btn btn-lg btn-block btn-success">
+                        cadastrar filme
+                    </a>
+                </th>
             </tr>
-
-            <tr>
-                <th>Como eu era antes de você</th>
-                <th>3245667</th>
-                <th>sim</th>
-                <th class="text-right"><button class="btn btn-info">Acessar</button><button
-                        class="btn btn-danger">Excluir</button></th>
-            </tr>
-
-
         </tbody>
-    </table>
     </div>
-</body>
-
-
-
-</html>
-
-
-
-
-</tbody>
-</table>
-</div>
-
-</body>
-</body>
-
-
-
-
-</html>
-
-</html>
+    </div>
+    </a>
+    </body>
+    </html>
