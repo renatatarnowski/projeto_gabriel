@@ -8,26 +8,46 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>App Filmes</title>
 </head>
+<style>
+    .btn-tabela {
+        padding: 5px;
+        margin: 10px;
+        background-color: red;
+        color: #ffffff;
+        border-radius: 10px;
+
+    }
+
+    .btn-tabela:hover {
+        background: rgba(255, 0, 0, 0.5);
+    }
+</style>
 
 <body>
+    <div class="center">
+        <a class="btn-tabela" href="tabela.html">Incluir novos filmes</a>
+    </div>
     <div class="container"></div>
+    <pre id="debug"></pre>
     <h1>Filmes</h1>
     <form class="jumbotron">
         <div class="row">
             <div class="col-4">
                 <label>Titulo</label>
-                <input type="text" class="form-control" placeholder="Titulo">
+                <input onkeyup="atualizarDados()" type="text" class="form-control" placeholder="">
+
+
             </div>
+
             <div class="col-3">
-                <label>Codigo</label>
-                <input type="url" class="form-control" placeholder="">
+                <label>codigo</label>
+                <input onkeyup="atualizarDados()" type="text" class="form-control" placeholder="">
             </div>
             <div class="col-3">
                 <label>Destaque</label>
                 <select class="form-control">
-                    <option>Categoria 1</option>
-                    <option>Categoria 2</option>
-                    <option>Categoria 3</option>
+                    <option>SIM</option>
+                    <option>NÃO</option>
                 </select>
             </div>
             <tbody>
@@ -35,12 +55,60 @@
                     <th class="text-rigth">
                         <button class="btn btn-info">Editar</button>
                         <button class="btn btn-info">Excluir</button>
+                        <a href="javascript:void(0)" class="btn btn-lg btn-block btn-success">
+                            Cadastrar Filme
+                        </a>
                     </th>
                 </tr>
-            </tbody>
-            </table>
-        </div>
+    </form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">titulo</th>
+                <th scope="col">codigo</th>
+                <th scope="col">destaque</th></select></div>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Culpa das estrelas</th>
+                <th>218926</th>
+                <th>sim</th>
+                <th class="text-right"><button class="btn btn-info">Acessar</button><button
+                        class="btn btn-danger">Excluir</button></th>
+            </tr>
+
+            <tr>
+                <th>Como eu era antes de você</th>
+                <th>3245667</th>
+                <th>sim</th>
+                <th class="text-right"><button class="btn btn-info">Acessar</button><button
+                        class="btn btn-danger">Excluir</button></th>
+            </tr>
+
+
+        </tbody>
+    </table>
+    </div>
+</body>
+
+
+
+</html>
+
+
+
+
+</tbody>
+</table>
+</div>
 
 </body>
+</body>
+
+
+
+
+</html>
 
 </html>
